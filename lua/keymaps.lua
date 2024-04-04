@@ -1,3 +1,2 @@
--- Set the file format to Unix (LF)
-vim.api.nvim_command('set ff=unix')
-vim.api.nvim_command("let @a = '$xj'")
+vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+vim.keymap.set("n", "<C-a>", "ggVG", { noremap = true })

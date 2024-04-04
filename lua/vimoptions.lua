@@ -2,8 +2,6 @@
 -- g is the vim global, not to be confused with lua global
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
-vim.keymap.set("n", "<C-a>", "ggVG", { noremap = true })
 -- vim.api.nvim_set_keymap('', '<Space>', '<Nop>', { noremap = true, silent = true})
 
 -- vim.opt is an interface to access the vim options from lua script.
@@ -39,3 +37,7 @@ vim.opt.ic = true
 
 -- This will make vim to display true colors instead of the terminal settings colors.
 vim.opt.termguicolors = true
+
+-- Set the file format to Unix (LF)
+vim.api.nvim_command('set ff=unix')
+vim.api.nvim_command("let @a = '$xj'")
