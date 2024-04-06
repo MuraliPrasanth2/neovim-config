@@ -1,6 +1,6 @@
 return {
-    "jackMort/ChatGPT.nvim",
-    event = "VeryLazy",
+    "dreamsofcode-io/ChatGPT.nvim",
+   event = "VeryLazy",
     config = function()
         require("chatgpt").setup({
             api_key_cmd="pass show nvimchatgptapikey"
@@ -13,4 +13,3 @@ return {
         "nvim-telescope/telescope.nvim"
     }
 }
-
