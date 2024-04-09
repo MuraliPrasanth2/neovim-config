@@ -35,7 +35,7 @@ return {
 
         --regestring hop 
             h = {
-                name = "hop"
+                name = "hop/hunk"
             },
 
         -- regestering telescope find
@@ -49,7 +49,12 @@ return {
         -- registering treesitter selection
             s = {
                 name = "selection",
-            }
+            },
+            
+            -- registering togglein git-signs, not working need to check
+            t = {
+                name = "toggle(git-signs)"
+            },
  
         }, { prefix = "<leader>" })
 
