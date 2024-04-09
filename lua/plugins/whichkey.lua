@@ -12,29 +12,11 @@ return {
     },
     config = function()
         local wk = require("which-key");
-        -- registering find for telescope
-        wk.register({
-            f = {
-                name = "find"
-            }
-        }, { prefix = "<leader>" })
 
-        -- registering hop
         wk.register({
-            h = {
-                name = "hop"
-            }
-        }, { prefix = "<leader>" })
-
-        -- registering treesitter selection
-        wk.register({
-            s = {
-                name = "selection"
-            }
-        }, { prefix = "<leader>" })
-
-        -- registering lsp
-        wk.register({
+            --registering undotree
+            ["u"] = { "<cmd>lua require('undotree').toggle()<CR>", "Undo-Tree" },
+            -- registering lsp
             ["m"] = { "<cmd>Mason<cr>", "Mason UI for Lsp" },
             ["r"] = { "<cmd>lua vim.lsp.buf.format{async=true}<cr>", "Reformat Code" },
 
@@ -50,7 +32,24 @@ return {
                     "Workspace Symbols",
                 },
             },
+
+        --regestring hop 
+            h = {
+                name = "hop"
+            },
+
+        -- regestering telescope find
+            f = {
+                name = "find"
+            },
+
+        -- registering treesitter selection
+            s = {
+                name = "selection",
+            }
+ 
         }, { prefix = "<leader>" })
+
 
     end
 }
