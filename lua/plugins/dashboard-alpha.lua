@@ -6,7 +6,6 @@ return {
     },
     config = function ()
         -- require'alpha'.setup(require'alpha.themes.theta'.config)
-        print("alpha config is called")
         local alpha = require("alpha")
         local dashboard = require("alpha.themes.dashboard")
 
