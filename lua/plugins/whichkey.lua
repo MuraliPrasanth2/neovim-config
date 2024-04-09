@@ -40,7 +40,10 @@ return {
 
         -- regestering telescope find
             f = {
-                name = "find"
+                name = "find",
+                g = {
+                    name = "git"
+                }
             },
 
         -- registering treesitter selection
