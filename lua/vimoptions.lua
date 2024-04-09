@@ -41,3 +41,6 @@ vim.opt.termguicolors = true
 -- Set the file format to Unix (LF)
 vim.api.nvim_command('set ff=unix')
 vim.api.nvim_command("let @a = '$xj'")
+
+-- make the undo tree persist between sessions
+vim.opt.undofile = true
