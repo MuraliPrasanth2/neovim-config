@@ -31,7 +31,7 @@ return {
         keymap.set("n", "<leader>/", "<cmd>Telescope live_grep<cr>", { desc = "grep search in cwd" }) -- grep search fora any word that we are going to type in the popup box
         keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "grep search the string under the cursour in the cwd" }) --grep search for the word under the cursour
         keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", { desc = "search in neovim help" }) --grep search for the word under the cursour
-        keymap.set("n", "/", "<cmd>Telescope current_buffer_fuzzy_find<cr>", { desc = "search in neovim help" }) --grep search for the word under the cursour
+        -- keymap.set("n", "/", "<cmd>Telescope current_buffer_fuzzy_find<cr>", { desc = "search in neovim help" }) --grep search for the word under the cursour
         keymap.set("n", "<leader>fgc", "<cmd>Telescope git_commits<cr>", { desc = "find in git commits" })
         keymap.set("n", "<leader>fgb", "<cmd>Telescope git_branches<cr>", { desc = "find in git branches" })
         keymap.set("n", "<leader>fgb", "<cmd>Telescope git_branches<cr>", { desc = "find in git branches" })
