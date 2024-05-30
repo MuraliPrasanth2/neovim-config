@@ -16,29 +16,13 @@ return {
         wk.register({
             --registering undotree
             ["u"] = { "<cmd>lua require('undotree').toggle()<CR>", "Undo-Tree" },
-            -- registering lsp
-            ["m"] = { "<cmd>Mason<cr>", "Mason UI for Lsp" },
-            ["r"] = { "<cmd>lua vim.lsp.buf.format{async=true}<cr>", "Reformat Code" },
 
-            l = {
-                name = "LSP",
-                a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
-                i = { "<cmd>LspInfo<cr>", "Info" },
-                l = { "<cmd>lua vim.lsp.codelens.run()<cr>", "CodeLens Action" },
-                r = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Rename" },
-                s = { "<cmd>Telescope lsp_document_symbols<cr>", "Document Symbols" },
-                S = {
-                    "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>",
-                    "Workspace Symbols",
-                },
-            },
-
-        --regestring hop 
+            --regestring hop
             h = {
                 name = "hop/hunk"
             },
 
-        -- regestering telescope find
+            -- regestering telescope find
             f = {
                 name = "find",
                 g = {
@@ -46,18 +30,16 @@ return {
                 }
             },
 
-        -- registering treesitter selection
+            -- registering treesitter selection
             s = {
                 name = "selection",
             },
-            
+
             -- registering togglein git-signs, not working need to check
             t = {
                 name = "toggle(git-signs)"
             },
- 
+
         }, { prefix = "<leader>" })
-
-
     end
 }
