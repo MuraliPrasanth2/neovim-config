@@ -1,6 +1,6 @@
 return {
 	{
-		-- this will help to install lsps and linters and formatters through a unified interface inside neovim insteaad of
+		-- this will help to install lsps and linters and formatters through a unified interface inside neovim instead of
 		-- downloading the lsps and linters and formatters manually and placing it in the correct place.
 		"williamboman/mason.nvim",
 		config = function()
@@ -8,7 +8,7 @@ return {
 		end,
 	},
 	{
-		-- this will help to bridge the gap between the nvim lsp config and the mason plugin and install the lsp programatically without having to install
+		-- this will help to bridge the gap between the nvim lsp config and the mason plugin and install the lsp programmatically without having to install
 		-- it using the mason ui using the ensure_install and auto_install option.
 		"williamboman/mason-lspconfig.nvim",
 		config = function()
@@ -204,7 +204,7 @@ return {
 					function()
 						vim.diagnostic.setloclist()
 					end,
-					"diagnotic list",
+					"diagnostic list",
 				},
 			})
 		end,
