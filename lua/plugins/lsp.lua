@@ -27,6 +27,10 @@ return {
 		-- the autocommand functions and also defining the root folder in a language is tricky and will vary for each language.
 		"neovim/nvim-lspconfig",
 		config = function()
+			vim.api.nvim_create_autocmd("BufEnter", {
+				pattern = { "*.js", "*.jsx" },
+				command = "set filetype=javascriptreact",
+			})
 			local lspconfig = require("lspconfig")
 			-- adding config for language servers
 			-- The nvim-cmp almost supports LSP's capabilities so You should advertise it to LSP servers..
@@ -45,9 +49,24 @@ return {
 				capabilities = capabilities,
 			})
 
+			-- lspconfig.emmet_ls.setup({
+			-- 	-- on_attach = on_attach,
+			-- 	capabilities = capabilities,
+			-- 	filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less" },
+			-- 	init_options = {
+			-- 		html = {
+			-- 			options = {
+			-- 				-- For possible options, see: https://github.com/emmetio/emmet/blob/master/src/config.ts#L79-L267
+			-- 				["bem.enabled"] = true,
+			-- 			},
+			-- 		},
+			-- 	},
+			-- })
+
 			require("lspconfig").html.setup({
 				capabilities = capabilities,
 			})
+
 			local wk = require("which-key")
 			-- To choose the formatter for the correct language( specifically to use jq for json files.)
 			local function format()

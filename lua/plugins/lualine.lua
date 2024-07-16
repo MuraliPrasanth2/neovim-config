@@ -3,6 +3,6 @@ return {
     dependencies = { 'nvim-tree/nvim-web-devicons' },
     config = function()
 --        uncomment the below line to enable lualine
---        require("lualine").setup()
+       require("lualine").setup()
     end
 }

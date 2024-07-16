@@ -16,6 +16,7 @@ return {
                 null_ls.builtins.diagnostics.codespell,
                 null_ls.builtins.diagnostics.markuplint,
                 require("none-ls.diagnostics.eslint_d"), -- requires none-ls-extras.nvim
+                -- require("none-ls.diagnostics.eslint-lsp"), -- requires none-ls-extras.nvim
             },
         })
     end,
