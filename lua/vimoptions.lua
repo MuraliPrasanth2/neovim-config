@@ -1,7 +1,7 @@
 --s setting a  global variable mapleder to space
 -- g is the vim global, not to be confused with lua global
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 -- vim.api.nvim_set_keymap('', '<Space>', '<Nop>', { noremap = true, silent = true})
 
 -- vim.opt is an interface to access the vim options from lua script.
@@ -14,7 +14,7 @@ vim.opt.splitbelow = true
 vim.opt.splitright = true
 
 -- this will disable the wrapping of the text at the end of the line, this will help navigation easy.
-vim.opt.wrap = false
+vim.opt.wrap = true
 
 -- This will make the tab to be filled with spaces and tab character to be 4 character width.
 vim.opt.expandtab = true
@@ -39,7 +39,7 @@ vim.opt.ic = true
 vim.opt.termguicolors = true
 
 -- Set the file format to Unix (LF)
-vim.api.nvim_command('set ff=unix')
+vim.api.nvim_command("set ff=unix")
 vim.api.nvim_command("let @a = '$xj'")
 
 -- make the undo tree persist between sessions
